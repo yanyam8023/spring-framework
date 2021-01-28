@@ -41,3 +41,7 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
+/learn/build/
+/learn/dependency-lookup/build/
+/learn/beans/build/
+/learn/ioc-container-overview/build/*

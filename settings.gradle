@@ -7,7 +7,6 @@ pluginManagement {
 
 plugins {
 	id "com.gradle.enterprise" version "3.2"
-	id "io.spring.gradle-enterprise-conventions" version "0.0.2"
 }
 
 include "spring-aop"
@@ -36,6 +35,13 @@ include "spring-webmvc"
 include "spring-websocket"
 include "framework-bom"
 include "integration-tests"
+
+include 'learn'
+include 'learn:ioc-container-overview'
+project(':learn:ioc-container-overview').projectDir = file('learn/ioc-container-overview')
+include 'learn:beans'
+include 'learn:dependency-lookup'
+project(':learn:dependency-lookup').projectDir = file('learn/dependency-lookup')
 
 rootProject.name = "spring"
 rootProject.children.each {project ->
